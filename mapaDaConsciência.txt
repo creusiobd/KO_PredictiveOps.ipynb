@@ -1,0 +1,11 @@
+ko_predictive_ops/
+├── domain/                  # O Santuário (Sem dependências externas)
+│   ├── entities.py          # Identidade dos objetos (Sinais, Níveis de Risco)
+│   ├── cognition.py         # A Mente (Hawkes, Bayes)
+│   └── exceptions.py        # Dissonâncias lógicas
+├── application/             # O Maestro (Casos de Uso)
+│   ├── ports.py             # Os Contratos (Interfaces Inbound/Outbound)
+│   └── service.py           # Orquestração do fluxo
+└── adapters/                # Os Intérpretes (O mundo externo)
+    ├── inbound_kafka.py     # Escuta o ruído do mundo
+    └── outbound_teams.py    # Grita para o mundo
